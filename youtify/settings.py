@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'youtify.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'doAnPTUD',
         'USER' : 'postgres',
         'PASSWORD' : 'nguyentranlam',
@@ -84,6 +84,16 @@ DATABASES = {
         'PORT' : '5432',
     }
 }
+# DATABASES = {
+#     'default':{
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': '0eW9i4Xf9en7zBmAk259',
+#         'HOST': 'containers-us-west-204.railway.app',
+#         'PORT': '6537',
+#     }
+# }
 
 
 # Password validation
@@ -116,7 +126,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+# USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
