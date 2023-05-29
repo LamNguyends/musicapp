@@ -74,26 +74,26 @@ WSGI_APPLICATION = 'youtify.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'doAnPTUD',
-        'USER' : 'postgres',
-        'PASSWORD' : 'nguyentranlam',
-        'HOST' : 'localhost',
-        'PORT' : '5432',
-    }
-}
 # DATABASES = {
-#     'default':{
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'railway',
-#         'USER': 'postgres',
-#         'PASSWORD': '0eW9i4Xf9en7zBmAk259',
-#         'HOST': 'containers-us-west-204.railway.app',
-#         'PORT': '6537',
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'doAnPTUD',
+#         'USER' : 'postgres',
+#         'PASSWORD' : 'nguyentranlam',
+#         'HOST' : 'localhost',
+#         'PORT' : '5432',
 #     }
 # }
+DATABASES = {
+    'default':{
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '0eW9i4Xf9en7zBmAk259',
+        'HOST': 'containers-us-west-204.railway.app',
+        'PORT': '6537',
+    }
+}
 
 
 # Password validation
