@@ -11,11 +11,11 @@ import json
 
 
 f = open('card.json', 'r')
-CONTAINER = json.load(f)
+CONTAINER = json.load(f)    
 
 def default(request):
     global CONTAINER
-    if request.user.is_anonymous:
+    if request.user.is_anonymous:   
         return redirect('/login')
 
     if request.method == 'POST':
